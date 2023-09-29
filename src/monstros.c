@@ -1,17 +1,23 @@
 #include "../includes/monstros.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <windows.h>
 #include <string.h>
 #define MONSTER_TOTAL 5
 
+//Definição da função de criação de monstros tendo como parâmetro o ponteiro de ponteiro monstros de tipo MONSTROS
 int inicializa_monstros(MONSTROS **monstros){
+
+    //Loop para aloação de memória dos 5 monstros a serem criados
     for(int i = 0; i<MONSTER_TOTAL;i++){
-        monstros[i] = (MONSTROS*) malloc(sizeof(MONSTROS) * MONSTER_TOTAL);
+        monstros[i] = (MONSTROS*) malloc(sizeof(MONSTROS));
+
+        //If para checar se foi possivel alocar a memória
         if(monstros[i] == NULL){ printf("Erro\n");
         return 0;
         }
     }
+
+    //Loop para criação dos monstros
     for(int i = 0; i < MONSTER_TOTAL; i++){
         if(i == 0){
             strcpy(monstros[i]->NAME, "Elementar");
@@ -52,6 +58,7 @@ int inicializa_monstros(MONSTROS **monstros){
     return 1;
 }
 
+//Definição da função de impressão de monstros tendo como parâmetro o ponteiro de ponteiro monstros do tipo MONSTROS
 void imprime_monstros(MONSTROS **monstros){
     printf("----------Monstros----------");
     for(int i = 0; i < MONSTER_TOTAL; i++){

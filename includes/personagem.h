@@ -2,7 +2,8 @@
 #define PERSONAGEM_H
 #define MAX 50
 
-typedef struct{
+//Definição do tipo PERSONAGEM como uma struct
+typedef struct PERSONAGEM{
   char nome[MAX];
   char classe[MAX];
   int vida;
@@ -11,6 +12,7 @@ typedef struct{
   int mana;
 } PERSONAGEM;
 
+//Protótipos de função
 void inicializa_personagem(PERSONAGEM *personagem);
 void imprime_personagem(PERSONAGEM personagem);
 

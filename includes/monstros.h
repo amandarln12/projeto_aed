@@ -1,9 +1,9 @@
 #ifndef MONSTROS_H
 #define MONSTROS_H
-
 #define MAX 50
 
-typedef struct monstros{
+//Definição do tipo MONSTROS como uma struct
+typedef struct MONSTROS{
 	char NAME[MAX];
 	int HP;
 	int ATTACK_DMG;
@@ -11,6 +11,7 @@ typedef struct monstros{
 	int DEFENSE;
 }MONSTROS;
 
+//Protótipos de função
 int inicializa_monstros(MONSTROS **monstros);
 void imprime_monstros(MONSTROS **monstros);
 
