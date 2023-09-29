@@ -12,36 +12,36 @@
 int main() {
 
 	setlocale(LC_ALL, "Portuguese");
-	//Definição da variável "personagem" como tipo PERSONAGEM
+	//DefiniÃ§Ã£o da variÃ¡vel "personagem" como tipo PERSONAGEM
 	PERSONAGEM personagem;
-	//Definição da variável "deck" como DECK
+	//DefiniÃ§Ã£o da variÃ¡vel "deck" como DECK
 	DECK deck;
-	//Definição da variável "monstros" como ponteiro do tipo MONSTROS
+	//DefiniÃ§Ã£o da variÃ¡vel "monstros" como ponteiro do tipo MONSTROS
 	MONSTROS *monstros;
 
-	//Função de criação de cartas
+	//FunÃ§Ã£o de criaÃ§Ã£o de cartas
 	inicializa_deck(&deck);
-	//Função de inserção de cartas em um deck
+	//FunÃ§Ã£o de inserÃ§Ã£o de cartas em um deck
 	gerar_deck(&deck);
-	//Função de impressão de deck
+	//FunÃ§Ã£o de impressÃ£o de deck
 	imprime_deck(&deck);
 
-	//Funções utilizadas para pausar e limpar a tela do terminal
+	//FunÃ§Ãµes utilizadas para pausar e limpar a tela do terminal
 	system("pause");
 	system("cls");
 
-	//Função de criação do personagem
+	//FunÃ§Ã£o de criaÃ§Ã£o do personagem
 	inicializa_personagem(&personagem);
-	//Função de impressão dos status do personagem
+	//FunÃ§Ã£o de impressÃ£o dos status do personagem
 	imprime_personagem(personagem);
 
-	//Funções utilizadas para pausar e limpar a tela do terminal
+	//FunÃ§Ãµes utilizadas para pausar e limpar a tela do terminal
 	system("pause");
 	system("cls");
 
-	//Função de criação de monstros
+	//FunÃ§Ã£o de criaÃ§Ã£o de monstros
 	inicializa_monstros(&monstros);
-	//Função de impressão dos monstros
+	//FunÃ§Ã£o de impressÃ£o dos monstros
 	imprime_monstros(&monstros);
 }
  

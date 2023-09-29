@@ -4,18 +4,18 @@
 #include <string.h>
 #include <windows.h>
 
-//DefiniÁ„o da funÁ„o de criaÁ„o de personagem tendo como par‚metro o ponteiro personagem de tipo PERSONAGEM
+//Defini√ß√£o da fun√ß√£o de cria√ß√£o de personagem tendo como par√¢metro o ponteiro personagem de tipo PERSONAGEM
 void inicializa_personagem(PERSONAGEM *personagem) {
-  printf("----------CriaÁ„o personagem----------\n");
+  printf("----------Cria√ß√£o personagem----------\n");
   printf("Insira seu nome: ");
   scanf("%[^\n]s", &personagem->nome);
   printf("Escolha sua classe [L para Lutador / G para Guerreiro / M para Mago]: ");
   scanf("%s", &personagem->classe);
   personagem->classe[0] = toupper(personagem->classe[0]);
 
-  //Loop para casos onde o dado inserido n„o corresponda a uma das opÁıes prÈ-definidas
+  //Loop para casos onde o dado inserido n√£o corresponda a uma das op√ß√µes pr√©-definidas
   while(strcmp(personagem->classe, "L") != 0 && strcmp(personagem->classe, "G") != 0 && strcmp(personagem->classe, "M") != 0){
-      printf("Dado inv·lido inserido, selecione a classe novamente.\n");
+      printf("Dado invÔøΩlido inserido, selecione a classe novamente.\n");
       system("pause");
       system("cls");
       printf("Escolha sua classe [L para Lutador / G para Guerreiro / M para Mago]: ");
@@ -23,9 +23,9 @@ void inicializa_personagem(PERSONAGEM *personagem) {
       personagem->classe[0] = toupper(personagem->classe[0]);
   }
 
-  //Switch para definiÁ„o de status com base na classe escolhida
+  //Switch para defini√ß√£o de status com base na classe escolhida
   switch(personagem->classe[0]){
-    //DefiniÁ„o de status da classe Lutador
+    //Defini√ß√£o de status da classe Lutador
     case 'L':
       strcpy(personagem->classe, "Lutador");
       personagem->vida = 100;
@@ -33,7 +33,7 @@ void inicializa_personagem(PERSONAGEM *personagem) {
       personagem->def = 10;
       personagem->mana = 8;
     break;
-    //DefiniÁ„o de status da classe Guerreiro
+    //Defini√ß√£o de status da classe Guerreiro
     case 'G':
       strcpy(personagem->classe, "Guerreiro");
       personagem->vida = 120;
@@ -41,7 +41,7 @@ void inicializa_personagem(PERSONAGEM *personagem) {
       personagem->def = 12;
       personagem->mana = 6; 
     break;
-    //DefiniÁ„o de status da classe Mago
+    //Defini√ß√£o de status da classe Mago
     case 'M':
       strcpy(personagem->classe, "Mago");
       personagem->vida = 80;
@@ -52,7 +52,7 @@ void inicializa_personagem(PERSONAGEM *personagem) {
   }
 }
 
-//DefiniÁ„o da funÁ„o de impress„o de personagem tento como par‚metro a vari·vel personagem do tipo PERSONAGEM
+//Defini√ß√£o da fun√ß√£o de impress√£o de personagem tento como par√£metro a vari√°vel personagem do tipo PERSONAGEM
 void imprime_personagem(PERSONAGEM personagem){
   system("cls");
   printf("----------Ficha do personagem----------\n");
