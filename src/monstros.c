@@ -22,21 +22,21 @@ int inicializa_monstros(MONSTROS **monstros){
         if(i == 0){
             strcpy(monstros[i]->NAME, "Elementar");
             monstros[i]->HP = 20;
-            monstros[i]->ATTACK_DMG = 0;
-            monstros[i]->MAGIC_DMG = 15;
-            monstros[i]->DEFENSE = 7;
+            monstros[i]->ATTACK_DMG = 3;
+            monstros[i]->MAGIC_DMG = 10;
+            monstros[i]->DEFENSE = 5;
         }
         if(i == 1){
             strcpy(monstros[i]->NAME, "Renegado");
             monstros[i]->HP = 25;
-            monstros[i]->ATTACK_DMG = 20;
-            monstros[i]->MAGIC_DMG = 0;
+            monstros[i]->ATTACK_DMG = 15;
+            monstros[i]->MAGIC_DMG = 5;
             monstros[i]->DEFENSE = 10;
         }
         if(i == 2){
             strcpy(monstros[i]->NAME, "Sacerdotisa");
             monstros[i]->HP = 15;
-            monstros[i]->ATTACK_DMG = 0;
+            monstros[i]->ATTACK_DMG = 5;
             monstros[i]->MAGIC_DMG = 20;
             monstros[i]->DEFENSE = 5;
         }        

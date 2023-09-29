@@ -9,6 +9,23 @@
 #include <stdlib.h>
 #include <windows.h>
 
+/*
+	typedef struct integrantes{
+		Amanda_Ramos;
+		Danilo_Garcia;
+		Gabriel_Francisco; 
+		Yago_Bastos;
+	}Integrantes;
+
+	typedef struct Conteúdo_do_código{
+		criação_do_jogador;
+		Deck_de_carta_embaralhadas;
+		monstros_e_suas_ações;
+		impressão_e_inicialização;
+	}Conteudo;
+	
+*/
+
 int main() {
 
 	setlocale(LC_ALL, "Portuguese");
